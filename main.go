@@ -16,9 +16,9 @@ var threadCount *int
 func main() {
 
 	githubRepo = flag.String("repo", "nil", "Repo to analyze")
-	gomodjson = flag.String("gomod", "go.mod.json", "go.mod JSON file to analyze")
+	gomodjson = flag.String("gomod", "go.mod.json", "go.mod JSON file to analyze. Run 'go mod edit -json' to get the JSON for your go.mod")
 	verbose = flag.Bool("verbose", false, "Verbosity Level")
-	netrcFile = flag.String("netrc", "nil", "Makes gocheckit scan the provided '.netrc' file in the user's home directory for login name and password.")
+	netrcFile = flag.String("netrc", "nil", "Makes Gocheckit scan the provided '.netrc' file in the user's home directory for login name and password.")
 	threadCount = flag.Int("threads", 5, "Amount of threads to spawn.")
 	flag.Parse()
 
@@ -134,6 +134,7 @@ func worker(jobs <-chan Require, results chan<- Result) {
 	}
 }
 
+// TODO y'all
 func checkSingleRepo(url string) {
 	resp, err := getRepoReadme(*githubRepo)
 	if err != nil {
@@ -144,15 +145,6 @@ func checkSingleRepo(url string) {
 	if checkReadmeForDeprecated(string(resp)) {
 		fmt.Println("[!] Repo README.md contains DEPRECATED:", *githubRepo)
 	}
-
-	// check, err := checkRepoForDeprecatedTopic("https://api.github.com/repos/nhsuk/profiles/topics")
-	// if err != nil {
-	// 	fmt.Println("[ERROR]", err)
-	// }
-
-	// if check {
-	// 	fmt.Println("[!] Repo contains Topic Deprecated:", *githubRepo)
-	// }
 }
 
 // Example deprecated repo -> https://github.com/bsm/sarama-cluster

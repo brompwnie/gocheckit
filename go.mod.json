@@ -5,17 +5,56 @@
 	"Go": "1.13",
 	"Require": [
 		{
+			"Path": "github.com/Shopify/sarama",
+			"Version": "v1.26.1",
+			"Indirect": true
+		},
+		{
+			"Path": "github.com/bsm/sarama-cluster",
+			"Version": "v2.1.15+incompatible"
+		},
+		{
+			"Path": "github.com/google/gofuzz",
+			"Version": "v1.1.0",
+			"Indirect": true
+		},
+		{
 			"Path": "github.com/jdxcode/netrc",
 			"Version": "v0.0.0-20190329161231-b36f1c51d91d"
 		},
 		{
-			"Path": "github.com/kr/pretty",
-			"Version": "v0.2.0",
+			"Path": "github.com/olekukonko/tablewriter",
+			"Version": "v0.0.4",
 			"Indirect": true
 		},
 		{
-			"Path": "gopkg.in/check.v1",
-			"Version": "v1.0.0-20190902080502-41f04d3bba15",
+			"Path": "github.com/onsi/ginkgo",
+			"Version": "v1.12.0",
+			"Indirect": true
+		},
+		{
+			"Path": "github.com/onsi/gomega",
+			"Version": "v1.9.0",
+			"Indirect": true
+		},
+		{
+			"Path": "github.com/prometheus/procfs",
+			"Version": "v0.0.10",
+			"Indirect": true
+		},
+		{
+			"Path": "github.com/uudashr/go-module",
+			"Version": "v0.0.0-20191127030352-43b3105f0527",
+			"Indirect": true
+		},
+		{
+			"Path": "golang.org/x/crypto",
+			"Version": "v0.0.0-20200210222208-86ce3cb69678",
+			"Indirect": true
+		},
+		{
+			"Path": "golang.org/x/mod",
+			"Version": "v0.2.0",
 			"Indirect": true
 		}
 	],
