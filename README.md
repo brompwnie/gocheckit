@@ -1,4 +1,4 @@
-# Break out the Box (BOtB)
+# Gocheckit
 Gocheckit is a Go tool that can be used to help identify Go modules that are potentially Deprecated.
 
 # What does it do?
