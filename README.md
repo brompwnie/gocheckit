@@ -89,5 +89,5 @@ User your Github creds from .netrc for no throttling
 # Issues, Bugs and Improvements
 For any bugs, please submit an issue. There is a long list of improvements but please submit an Issue if there is something you want to see added to Gocheckit.
 
- # License
- Gocheckit is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0).
+# License
+Gocheckit is licensed under the GNU General Public License v3.0
