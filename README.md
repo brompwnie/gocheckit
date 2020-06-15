@@ -52,7 +52,9 @@ sword. (default "nil")
 Simplest Usage
 
 ```
+// Run this command to get your go modules in json format
 # go mod edit -json > go.mod.json
+// Run gocheckit to analyze the go modules in the file go.mod.json
 # ./gocheckit
 [+] Go Checkit
 [*] Loading Modules from: go.mod.json
